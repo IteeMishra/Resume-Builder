@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+}
+.head{
+    background-color: #088395;
+    color: #EBF4F6;
+    text-align: center;
+   height: 5.5rem;
+  
+  
+}
+
+.main{
+    display: flex;
+    text-align: center;
+    width: 80%;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin-left: 8%;
+   margin-right: 8%;
+    margin-top: 10px;
+border: 5px solid #088395;
+flex-wrap: wrap;
+
+border-radius: 12px;
+color: #071952;
+}
+.x{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mb-3{
+    display: flex;
+}
+
+.inner{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    height: 3rem;
+    padding: 1.2rem;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 90%;
+    margin-left: 5%;
+   
+}
+label{
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px;
+}
+button{
+    margin-top: 12px;
+    width: 40%;
+    
+}
+.btn-primary{
+    background-color: #37B7C3;
+    color: black;
+}
+.btn-primary:hover{
+    background-color: #071952;
+}
+textarea{
+    height: 8rem;
+    padding: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+h1{
+    font-weight: 900;
+}
+.finally{
+   
+    width:40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 3.5rem;
+    padding: 4px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-class{
+display: flex;
+ flex-direction: column;
+}
+
+input:hover,textarea:hover {
+    transform: scale(1.05);
+  }
+  input,textarea{
+    border: 1px solid #071952;
+    border-radius: 7px;
+   }
+.filetype{
+    padding-top: 12px;
+    border: none;
+    border-radius: 0;
+}
+
+/* cv-template */
+.cv-template{
+    display: none;
+}
+.image-cv{
+    width: 200px;
+    border-radius: 50%;
+   margin: 2rem;
+   align-items: center;
+}
+.col-md-4{
+    text-align: center;
+    background-color: rgba(4, 169, 246, 0.4);
+}
+h1{
+    font-weight: 500;
+
+}
+.card{
+    border: none;
+    margin: 12px;
+}
+
+  @media (max-width: 900px){
+ 
+   .main{
+    width: 90%;
+    margin-left: 4%;
+    margin-right: 4%;
+   }
+  }
+  @media print {
+    .non_print_area {
+        display: none !important;
+    }
+
+    .print_area,
+    .print_area * {
+        visibility: visible;
+    }
+
+    .print_area {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+    }
+
+    body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+}
+  
+  
